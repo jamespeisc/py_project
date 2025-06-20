@@ -1,0 +1,1 @@
+{"DEFAULT": {"a": "test"}, "mysql": {"a": "1000", "default-character-set": "utf8"}, "mysqld": {"a": "test", "datadir": "/dbserver/data", "port": "33060", "character-set-server": "utf8", "sql-mode": "NO_ENGIN_SUBTITUTION,STRICT_TRANS_TABLES"}}

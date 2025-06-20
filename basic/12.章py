@@ -1,0 +1,264 @@
+# sort(key=None,reverse=False)
+#
+# lst.sort(key=str)
+# print(lst)
+#
+# lst.sort(key=str,reverse=True)
+# print(lst)
+# sort key =str(把每个元素按照str排序)
+
+
+# lst0 = list(range(4))
+# lst5 = lst0.copy()
+# print(lst5==lst0)
+# lst5[2]=10
+# print(lst5==lst0)
+#
+# print('22222222222222')
+# lst0=[1,[2,3,4],5]
+# lst5 = lst0.copy()
+# print(lst5==lst0)
+# lst5[2] =10
+# print(lst5==lst0)
+# lst5[2]=5
+# lst5[1][1] = 20
+# print(lst5 ==lst0)
+# print('33333333333333')
+#
+# #lst0 = list(range(5))
+# #lst2 = list(range(5))
+#
+# lst1=lst0.copy()
+#
+# #lst1[0]=100
+#
+# print(lst1,lst0)
+# lst2=lst1
+#
+# print(id(lst1),id(lst0),id(lst2))
+#
+# lst10=[1,[2,3,4],5]
+# lst15 = lst10.copy()
+#
+# print(lst10[1],id(lst10[1]),lst15[1],id(lst15[1]))
+
+# copy后 列表list地址不同，但引用类型仅复制地址 =：引用计数，也是复制地址
+
+
+# from copy import deepcopy
+
+# lst0 = [1,[2,3,4],5]
+# lst5 = deepcopy(lst0)
+# print(lst0,id(lst0),lst5,id(lst5))
+# lst0[1][0]=100
+# print(lst0,id(lst0),lst5,id(lst5))
+
+# import random
+#
+# for i in range(10):
+#     print(random.randint(1, 6))
+#
+# random.choice([1,3,5,7]) #随机拿
+# random.choice(range(10))#随机拿
+# random.shuffle(lst0) #就地打乱
+# random.sample(['a','b','c','d'],2) #从样本空间中随机取出k个不同元素，返回一个新的列表
+# random.randrange(1,7,2)
+#
+t = tuple()
+# print(id(t))
+# t = tuple(range(5))
+# print(id(t))
+# t = (1,5,'abc')
+# for x in t:
+#     print(x)
+# t1 = (1)
+# print(type(t1))
+# t1 = (1,)
+# print(type(t1))
+# t1 = ((1),)*5
+# print(t1)
+# t2 = ((1,),)*5
+# print(t2)
+# print(t1[0])
+# 元组是只读的，所以增改删 方法都没有
+# 命名元组
+
+# import collections
+#
+# Point = collections.namedtuple('P',['x','y'])
+# print(Point)
+#
+# p = Point(1,2)
+# print(p)
+#
+# print(p.x,p.y)
+# print(type(p))
+# print(p[0],p[1])
+#
+# from collections import namedtuple
+#
+# Point2 = namedtuple('P2',['x', 'y'])
+# p2 = Point2(3,4)
+#
+# print(p2.x,p2.y)
+#
+# Student = namedtuple('stu','name age')
+# s1 = Student('tom',20)
+# s2 = Student('jerry',21)
+#
+# print(s1,s2)
+# #fieldnames = list(map(str,fieldnames)),map生成可迭代对象
+# #fieldname 用空白符或逗号分隔
+#
+# print('a' > 'A')
+# print('A' > 'a')
+
+# n = 100
+# lst = [2]
+# for i in range(3,n,2):
+#     flag = False
+#     for j in lst:
+#         if j > i**0.5:
+#             flag = True
+#             break
+#         if i %j ==0:
+#             flag = False
+#             break
+#
+#     if flag:
+#         print(i)
+#         lst.append(i)
+
+
+# import math
+#
+# n = 100
+# primenumber = []
+# for x in range(2,n):
+#     for i in primenumber:
+#         if x % i ==0:
+#             break
+#     else:
+#         print(x)
+#         primenumber.append(x)
+# #另外一种写法,建议会背
+# upper_limit = 100
+# primenumber = []
+# flag = False
+# for x in range(3,upper_limit,2):
+#     up = math.ceil(math.sqrt(x))
+#     for i in primenumber:
+#         if x % j ==0:
+#             flag = True
+#             break
+#         if i >= up:
+#             flag =False
+#             break
+#     if not flag:
+#         primenumber.append(x)
+
+# 杨辉三角
+
+# triangle = [[1],[1,1]]
+# n = 6
+# for i in range(2,n):
+#     newline=[1]# 新行及第一个元素
+#     pre =triangle[i-1]
+#     for j in range(i-1):
+#         val = pre[j+0]+pre[j+1]
+#         newline.append(val)
+#     newline.append(1)
+#     triangle.append(newline)
+# print(triangle)
+
+# n = 6
+# print([1])
+# pre = [1,1]
+# print(pre)
+#
+# for i in range(2,n):
+#     newline=[1]
+#     for j in range(i-1):
+#         val = pre[j] +pre[j+1]
+#         newline.append(val)
+#     newline.append(1)
+#     print(newline)
+#     pre=newline
+
+# n = 6
+# for i in range(n):
+#     newline = [1]
+#     if i == 0:
+#         print(newline)
+#         continue
+#     for j in range(i - 1):
+#         val = pre[j] + pre[j + 1]
+#         newline.append(val)
+#     newline.append(1)
+#     print(newline)
+#     pre = newline
+
+
+# n = 6
+# pre = [1]
+# print(pre)
+# pre.insert(0,0)
+# pre.append(0)
+# #print(pre)
+#
+# for i in range(1,n):
+#     newline=[]
+#     for j in range(i+1):
+#         val=pre[j]+pre[j+1]
+#         newline.append(val)
+#
+#     print(newline)
+#     pre=newline
+#     pre.insert(0,0)
+#     pre.append(0)
+
+
+# n = 6
+# pre = [1]
+# print(pre)
+# pre.append(0)
+# for i in range(1,n):
+#     newline=[]
+#     for j in range(i+1):
+#         val = pre[j-1] + pre[j]
+#         newline.append(val)
+#     print(newline)
+#     pre=newline
+#     pre.append(0)
+
+
+# triangle = []
+# n = 6
+# for i in range(n):
+#     row = [1]
+#     for k in range(i):
+#         row.append(1) if k == i - 1 else row.append(0)
+#     triangle.append(row)
+#     if i == 0:
+#         continue
+#     for j in range(1, i // 2 + 1):
+#         val = triangle[i - 1][j - 1] + triangle[i - 1][j]
+#         row[j] = val
+#         if i != 2 * j:
+#             row[-j - 1] = val
+# print(triangle)
+
+
+# triangle = []
+#
+# n = 6
+#
+# for i in range(n):
+#     row = [1] * (i+1)
+#     triangle.append(row)
+#     for j in range(1,i//2+1):
+#         val = triangle[i-1][j-1] + triangle[i-1][j]
+#         row[j] = val
+#         if i !=2*j:
+#             row[-j-1] = val
+# print(triangle)
