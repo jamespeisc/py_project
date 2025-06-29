@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>显示数据如下</h1>
+
+<ul>
+    {% for id,name,age in userlist %}
+    <li>{{loop.index}} {{id}}, {{name}}, {{age}}</li>
+    {% endfor %}
+
+</ul>
+
+# FileSystemLoader
+
+</body>
+</html>

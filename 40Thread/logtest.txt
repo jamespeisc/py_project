@@ -1,0 +1,5 @@
+20230801|103018	 [MainThread, 24536] info111 
+20230801|103018	 [MainThread, 24536] info magedu.com 
+20230801|103018	 [MainThread, 24536] main info 
+20230801|103018	 [MainThread, 24536] main debug 
+20230801|103018	 [MainThread, 24536] log1 hello 

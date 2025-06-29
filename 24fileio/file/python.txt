@@ -1,0 +1,21 @@
+自20世纪90年代初Python语言诞生至今，它已被逐渐广泛应用于系统管理任务的处理和Web编程。
+1995年，Guido van Rossum在弗吉尼亚州的国家创新研究公司（CNRI）继续他在Python上的工作，并在那里发布了该软件的多个版本。 [1]
+2000年五月，Guido van Rossum和Python核心开发团队转到BeOpen.com并组建了BeOpen PythonLabs团队。同年十月，BeOpen PythonLabs团队转到Digital Creations（现为Zope Corporation）。 [1]2001年，Python软件基金会（PSF）成立，这是一个专为拥有Python相关知识产权而创建的非营利组织。Zope Corporation是PSF的赞助成员。 [1]
+Python的创始人为荷兰人吉多·范罗苏姆（Guido van Rossum）。1989年圣诞节期间，在阿姆斯特丹，Guido为了打发圣诞节的无趣，决心开发一个新的脚本解释程序，作为ABC语言的一种继承。之所以选中单词Python（意为大蟒蛇）作为该编程语言的名字，是因为英国20世纪70年代首播的电视喜剧《蒙提·派森的飞行马戏团》（Monty Python's Flying Circus）。
+ABC是由Guido参加设计的一种教学语言。就Guido本人看来，ABC这种语言非常优美和强大，是专门为非专业程序员设计的。但是ABC语言并没有成功，究其原因，Guido认为是其非开放造成的。Guido决心在Python中避免这一错误。同时，他还想实现在ABC中闪现过但未曾实现的东西。
+就这样，Python在Guido手中诞生了。可以说，Python是从ABC发展起来，主要受到了Modula-3（另一种相当优美且强大的语言，为小型团体所设计的）的影响。并且结合了Unix shell和C的习惯。
+This Wiki is a community place to gather and organize all things about Python. Feel free to exercise your editorial skills and expertise to make it a useful knowledge base and up-to-date reference on all Python-related topics.
+
+There are some guidelines describing the policies and rules governing this Wiki and how you can most effectively contribute to it. A list of site improvements describes various tasks where your help would be appreciated. To keep up with changes on this site, check RecentChanges frequently or follow it using RSS: RSS feed.
+
+Creating a Wiki account
+
+In order to sign up for a wiki account, please go to the Create new account form, enter your account name (using the format FirstnameLastname to avoid issues - please don't use spaces in the name) and provide a password, plus email address (for password recovery).
+
+Editing pages
+
+Since spamming and vandalism on this wiki had reached a level that required constant intervention, unfamiliar users are no longer allowed to edit pages. However all you need to do is introduce yourself to the wiki admin group to become an editor.
+
+If you want to edit a page and have just signed up, or find that you can no longer edit a page that you could edit before, please write to the pydotorg-www mailing list describing what you would like to edit, and we'll add you to the EditorsGroup. Please include your account name (wiki name) in this message.
+
+Sorry for any inconvenience, but we want to keep this wiki a useful tool for the community, while at the same time preventing the wiki admins from burning out cleaning up junk. 
